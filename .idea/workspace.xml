@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e6bf3b0-ad87-4399-8474-f02b9a3ee60d" name="Changes" comment="">
-<<<<<<< HEAD
+
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/pets/petsdelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/pets/petsdelete.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/pets/petsget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/pets/petsget.java" afterDir="false" />
@@ -18,9 +18,8 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/user/userget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/user/userget.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/user/userpost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/user/userpost.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/user/userput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/user/userput.java" afterDir="false" />
-=======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
->>>>>>> 0d5dc6c506f4d9a809d6bf3d6ce1b4eab1f6de09
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +52,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-<<<<<<< HEAD
+
     "git-widget-placeholder": "dev",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/jackb/Desktop/Sparta Global/IDEA Projects/08_API_Group_Project/PetStoreApiTesting"
@@ -65,16 +64,22 @@
         <option value="jdk-21.0.2-temurin-21.0.2-4caba194b151-7da56cdf" />
       </set>
     </attachedChunks>
-=======
+
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/jackb/SpartaGlobal/PetStoreApiTesting/src/test/java"
   }
 }]]></component>
+
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/jackb/SpartaGlobal/PetStoreApiTesting/src/test/java"
+  }
+}]]></component>
+
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jackb\SpartaGlobal\PetStoreApiTesting\src\test\java" />
     </key>
->>>>>>> 0d5dc6c506f4d9a809d6bf3d6ce1b4eab1f6de09
+
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
