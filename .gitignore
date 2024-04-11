@@ -13,7 +13,7 @@ target/
 *.iws
 *.iml
 *.ipr
-#*.properties
+*.properties
 
 ### Eclipse ###
 .apt_generated
@@ -40,4 +40,4 @@ build/
 ### Mac OS ###
 .DS_Store
 
-configuration.properties
+/resources/

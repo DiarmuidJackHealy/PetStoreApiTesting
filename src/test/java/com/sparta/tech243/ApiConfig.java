@@ -12,7 +12,7 @@ public class ApiConfig {
 
         try (InputStream inputStream = ApiConfig.class                .getClassLoader()
 
-                .getResourceAsStream("configuration.properties")) {
+                .getResourceAsStream("testconfig.properties")) {
 
             if (inputStream != null) {
 
@@ -20,7 +20,7 @@ public class ApiConfig {
 
             } else {
 
-                throw new IOException("Unable to find configuration.properties");
+                throw new IOException("Unable to find testconfig.properties");
 
             }        } catch (IOException e) {
 
