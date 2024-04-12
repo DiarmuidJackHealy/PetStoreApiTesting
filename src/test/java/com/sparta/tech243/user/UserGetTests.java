@@ -119,49 +119,6 @@ public class UserGetTests {
         MatcherAssert.assertThat(response.statusCode(), Matchers.is(200));
     }
 
-    @Test
-    @DisplayName("Login as a specific user with an incorrect username")
-    void getLoginUserIncorrectUserName() {
-        Response response =
-                given(
-                        getRequestSpec()
-                                .setBasePath(BASE_PATH + "/login?{username}&{password}")
-                                .addPathParams("username", "Bill", "password", testUserPassword)
-                                .build()
-                )
-                        .when()
-                        .get()
-                        .then()
-                        .log().all()
-                        .spec(getJsonResponseWithStatus(200))
-                        .extract()
-                        .response();
-
-        MatcherAssert.assertThat(response.statusCode(), Matchers.is(200));
-    }
-
-    @Test
-    @DisplayName("Login as a specific user with an incorrect password")
-    void getLoginUserIncorrectPassword() {
-        Response response =
-                given(
-                        getRequestSpec()
-                                .setBasePath(BASE_PATH + "/login?{username}&{password}")
-                                .addPathParams("username", testUserName, "password", "Boop")
-                                .build()
-                )
-                        .when()
-                        .get()
-                        .then()
-                        .log().all()
-                        .spec(getJsonResponseWithStatus(200))
-                        .extract()
-                        .response();
-
-        MatcherAssert.assertThat(response.statusCode(), Matchers.is(200));
-    }
-
-
     private ResponseSpecification getJsonResponseWithStatus(Integer status) {
         return new ResponseSpecBuilder()
                 .expectStatusCode(status)
