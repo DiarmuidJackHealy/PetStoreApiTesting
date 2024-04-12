@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="RunManager">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1884bb19-66ae-4dea-b9a7-7907f5c298bd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/user/UserDeleteTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/user/UserDeleteTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.UserDeleteTests.checkDeleteUserRequestRemovesExistingUser.executor": "Run",
+    "JUnit.UserDeleteTests.createEmployeePostRequest_ReturnsCreatedEmployee.executor": "Run",
+    "JUnit.UserDeleteTests.setUp.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "3-7-UserDeletion",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/aston/swagger-petstore"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.UserDeleteTests.checkDeleteUserRequestRemovesExistingUser">
     <configuration name="UserDeleteTests.checkDeleteUserRequestRemovesExistingUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PetStoreApiTesting" />
       <extension name="coverage">
@@ -17,10 +54,62 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserDeleteTests.createEmployeePostRequest_ReturnsCreatedEmployee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PetStoreApiTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.tech243.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.tech243.user" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.tech243.user.UserDeleteTests" />
+      <option name="METHOD_NAME" value="createEmployeePostRequest_ReturnsCreatedEmployee" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDeleteTests.setUp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PetStoreApiTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.tech243.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.tech243.user" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.tech243.user.UserDeleteTests" />
+      <option name="METHOD_NAME" value="setUp" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UserDeleteTests.checkDeleteUserRequestRemovesExistingUser" />
+        <item itemvalue="JUnit.UserDeleteTests.setUp" />
+        <item itemvalue="JUnit.UserDeleteTests.createEmployeePostRequest_ReturnsCreatedEmployee" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-temurin-21.0.2-4caba194b151-7da56cdf" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1884bb19-66ae-4dea-b9a7-7907f5c298bd" name="Changes" comment="" />
+      <created>1712913470231</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712913470231</updated>
+    </task>
+    <servers />
   </component>
 </project>

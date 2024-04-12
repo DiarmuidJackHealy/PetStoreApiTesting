@@ -32,48 +32,50 @@ public class UserDeleteTests {
         //#############################Create a Test User########################################
         this.user =
                 given(getRequestSpecification()
-                        .setBasePath(BASE_PATH + "/user")
+                        .setBasePath(BASE_PATH)
                         .setBody("""
-                          {
-                              "id": 10,
-                              "username": "theUser",
-                              "firstName": "John",
-                              "lastName": "James",
-                              "email": "john@email.com",
-                              "password": "12345",
-                              "phone": "12345",
-                              "userStatus": 1
-                          }
-                      """)
+                        {
+                          "id": 10,
+                          "username": "theUser",
+                          "firstName": "John",
+                          "lastName": "James",
+                          "email": "john@email.com",
+                          "password": "12345",
+                          "phone": "12345",
+                          "userStatus": 1
+                        }
+                        """)
+                        .setContentType("application/json")
                         .build())
-                    .when()
+                        .when()
+                        //.log().all()
                         .post()
-                    .then()
-                        .assertThat().statusCode(200)
+                        .then()
+                        //.log().all()
+                        .spec(getJsonResponseWithStatus(200))
                         .extract()
                         .as(User.class);
 
         //#############################Login as Test User########################################
-        User userLogin =
-                given(getRequestSpecification()
-                        .setBasePath(BASE_PATH + "/user/login")
-                        .addPathParams("username", user.getUsername(), "password", user.getPassword())
-                        .build())
-                    .when()
-                        .get()
-                    .then()
-                        .spec(getJsonResponseWithStatus(200))
-                        .extract()
-                        .as(User.class);
+//        this.user =
+//                given(getRequestSpecification()
+//                        .setBasePath(BASE_PATH + "/login")
+//                        //.addPathParams("username", user.getUsername(), "password", user.getPassword())
+//                        .build())
+//                    .when()
+//                        .log().all()
+//                        .get()
+//                    .then()
+//                        .spec(getJsonResponseWithStatus(200))
+//                        .extract()
+//                        .as(User.class);
     }
-
-
     @Test
     @DisplayName("Check delete user request removes an existing user from the system")
     void checkDeleteUserRequestRemovesExistingUser() {
             given(getRequestSpecification()
-                    .setBasePath(BASE_PATH + "/user/" + user.getUsername())
-                    .addPathParam("username", user.getUsername())
+                    .setBasePath(BASE_PATH + "/" + user.getUsername())
+                   // .addPathParam("username", user.getUsername())
                     .build())
                     .when()
                     .delete()
@@ -86,8 +88,8 @@ public class UserDeleteTests {
 
 
                 given(getRequestSpecification()
-                        .setBasePath(BASE_PATH + "/user/login")
-                        .addPathParams("username", user.getUsername(), "password", user.getPassword())
+                        .setBasePath(BASE_PATH + "/login")
+                        //.addPathParams("username", user.getUsername(), "password", user.getPassword())
                         .build())
                     .when()
                         .get()
@@ -115,16 +117,7 @@ public class UserDeleteTests {
     private RequestSpecBuilder getRequestSpecification() {
         return new RequestSpecBuilder()
                 .setBaseUri(BASE_URI)
-                .setBasePath(BASE_PATH)
-                .addHeaders(Map.of(
-                        "Accept", "application/vnd.github+json",
-                        //"Authorization", "Bearer " + ApiConfig.getToken(),
-                        "X-GitHub-Api-Version", "2022-11-28"
-                ));
-//                .addPathParams(Map.of(
-//                        "owner", "AstonSparta",
-//                        "repo", "testing"
-//                ));
+                .setBasePath(BASE_PATH);
     }
 
 
