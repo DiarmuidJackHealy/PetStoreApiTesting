@@ -5,6 +5,7 @@ import com.sparta.tech243.user.pojos.User;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 import io.restassured.specification.ResponseSpecification;
 import org.hamcrest.MatcherAssert;
 import org.hamcrest.Matchers;
@@ -26,11 +27,13 @@ public class UserDeleteTests {
     public static final String BASE_URI = ApiConfig.getBaseUri();
     public static final String BASE_PATH = ApiConfig.getUserBasePath();
     private User user;
+    private String username;
+    private String password;
 
     @BeforeEach
     void setUp() {
         //#############################Create a Test User########################################
-        this.user =
+        User user =
                 given(getRequestSpecification()
                         .setBasePath(BASE_PATH)
                         .setBody("""
@@ -55,48 +58,57 @@ public class UserDeleteTests {
                         .spec(getJsonResponseWithStatus(200))
                         .extract()
                         .as(User.class);
+        this.username = user.getUsername();
+        this.password = user.getPassword();
 
-        //#############################Login as Test User########################################
-//        this.user =
-//                given(getRequestSpecification()
-//                        .setBasePath(BASE_PATH + "/login")
-//                        //.addPathParams("username", user.getUsername(), "password", user.getPassword())
-//                        .build())
-//                    .when()
-//                        .log().all()
-//                        .get()
-//                    .then()
-//                        .spec(getJsonResponseWithStatus(200))
-//                        .extract()
-//                        .as(User.class);
     }
     @Test
     @DisplayName("Check delete user request removes an existing user from the system")
     void checkDeleteUserRequestRemovesExistingUser() {
-            given(getRequestSpecification()
-                    .setBasePath(BASE_PATH + "/" + user.getUsername())
-                   // .addPathParam("username", user.getUsername())
-                    .build())
-                    .when()
-                    .delete()
-                    .then()
-                    .spec(getResponseStatus(204));
 
-        ResponseSpecBuilder responseSpecBuilder = new ResponseSpecBuilder();
-        responseSpecBuilder.expectStatusCode(Matchers.not(200));
-        responseSpecBuilder.expectBody(Matchers.is(emptyOrNullString()));
-
-
-                given(getRequestSpecification()
-                        .setBasePath(BASE_PATH + "/login")
-                        //.addPathParams("username", user.getUsername(), "password", user.getPassword())
-                        .build())
-                    .when()
+        Response response =
+                given(
+                        getRequestSpecification()
+                                .setBasePath(BASE_PATH + "/login?{username}&{password}")
+                                .addPathParams("username", username, "password", password)
+                                .build()
+                )
+                        .when()
                         .get()
-                    .then()
-                        .spec(responseSpecBuilder.build());
+                        .then()
+                        .log().all()
+                        .spec(getJsonResponseWithStatus(200))
+                        .extract()
+                        .response();
 
-        //MatcherAssert.assertThat();
+        Response responseDeletion =
+                    given(getRequestSpecification()
+                        .setBasePath(BASE_PATH + "/user/{username}")
+                        .addPathParam("username", username)
+                        .build())
+                        .when()
+                        .delete()
+                        .then()
+                        .spec(getResponseStatus(404))
+                            .extract()
+                            .response();
+
+        Response responseCheck =
+                given(
+                        getRequestSpecification()
+                                .setBasePath(BASE_PATH + "/login?{username}&{password}")
+                                .addPathParams("username", username, "password", password)
+                                .build()
+                )
+                        .when()
+                        .get()
+                        .then()
+                        .log().all()
+                        .spec(getJsonResponseWithStatus(400))
+                        .extract()
+                        .response();
+
+        MatcherAssert.assertThat(responseCheck.statusCode(), Matchers.is(400));
 
     }
 

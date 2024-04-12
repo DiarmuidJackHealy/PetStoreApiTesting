@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1884bb19-66ae-4dea-b9a7-7907f5c298bd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/user/UserDeleteTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/user/UserDeleteTests.java" afterDir="false" />
     </list>
@@ -29,6 +28,7 @@
   "keyToString": {
     "JUnit.UserDeleteTests.checkDeleteUserRequestRemovesExistingUser.executor": "Run",
     "JUnit.UserDeleteTests.createEmployeePostRequest_ReturnsCreatedEmployee.executor": "Run",
+    "JUnit.UserDeleteTests.getLoginUser.executor": "Run",
     "JUnit.UserDeleteTests.setUp.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -70,6 +70,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserDeleteTests.getLoginUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PetStoreApiTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.tech243.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.tech243.user" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.tech243.user.UserDeleteTests" />
+      <option name="METHOD_NAME" value="getLoginUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserDeleteTests.setUp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PetStoreApiTesting" />
       <extension name="coverage">
@@ -89,6 +105,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UserDeleteTests.checkDeleteUserRequestRemovesExistingUser" />
+        <item itemvalue="JUnit.UserDeleteTests.getLoginUser" />
         <item itemvalue="JUnit.UserDeleteTests.setUp" />
         <item itemvalue="JUnit.UserDeleteTests.createEmployeePostRequest_ReturnsCreatedEmployee" />
       </list>
