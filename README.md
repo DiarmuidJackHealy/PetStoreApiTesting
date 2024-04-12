@@ -27,7 +27,7 @@ This project aims to create a reliable testing framework for the Swagger Pet Sto
 # How would you Collaborate with this Project
 
 
-# Class📊 Diagram
+# Class 📊Diagram
 This project tests three main entities: pets, stores, and users. <br>
 The following diagram displays the HTTP requests that were tested.
 
