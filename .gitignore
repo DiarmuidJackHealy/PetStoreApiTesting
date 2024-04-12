@@ -5,7 +5,7 @@ target/
 
 
 ### IntelliJ IDEA ###
-.idea/modules.xml
+.idea/
 .idea/jarRepositories.xml
 .idea/compiler.xml
 .idea/workspace.xml
@@ -41,3 +41,4 @@ build/
 .DS_Store
 
 /resources/
+/.idea/
