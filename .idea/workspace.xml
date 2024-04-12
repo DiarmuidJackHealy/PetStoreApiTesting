@@ -64,7 +64,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.StoreGetTests (1)">
+  <component name="RunManager" selected="JUnit.StorePostTests (1)">
     <configuration name="StoreGetTests (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PetStoreApiTesting" />
       <extension name="coverage">
@@ -75,6 +75,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.sparta.tech243.store" />
       <option name="MAIN_CLASS_NAME" value="com.sparta.tech243.store.StoreGetTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StorePostTests (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PetStoreApiTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.tech243.store.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.tech243.store" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.tech243.store.StorePostTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -99,16 +114,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StorePostTests.patchCommentWithNewContent_ReturnsNewContentInResponseBody" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PetStoreApiTesting" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StorePostTests" />
-      <option name="METHOD_NAME" value="patchCommentWithNewContent_ReturnsNewContentInResponseBody" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="StorePostTests.testingThePetGetsDeleted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PetStoreApiTesting" />
       <option name="PACKAGE_NAME" value="" />
@@ -121,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StorePostTests (1)" />
         <item itemvalue="JUnit.StoreGetTests (1)" />
         <item itemvalue="JUnit.StorePostTests" />
         <item itemvalue="JUnit.StorePostTests.testingThePetGetsDeleted" />
         <item itemvalue="JUnit.StorePostTests.getOrderByIdReturnsTheCorrectOrder" />
-        <item itemvalue="JUnit.StorePostTests.patchCommentWithNewContent_ReturnsNewContentInResponseBody" />
       </list>
     </recent_temporary>
   </component>
