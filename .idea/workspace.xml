@@ -5,21 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e6bf3b0-ad87-4399-8474-f02b9a3ee60d" name="Changes" comment="">
-
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/pets/petsdelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/pets/petsdelete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/pets/petsget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/pets/petsget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/pets/petspost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/pets/petspost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/pets/petsput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/pets/petsput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/store/storedelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/store/storedelete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/store/storeget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/store/storeget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/store/storepost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/store/storepost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/user/userdelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/user/userdelete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/user/userget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/user/userget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/user/userpost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/user/userpost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/user/userput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/user/userput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,46 +29,112 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
-}</component>
+    &quot;associatedIndex&quot;: 8
+    }</component>
   <component name="ProjectId" id="2exGsfWXynCI1MZazBYrsrTvMDD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-
-    "git-widget-placeholder": "dev",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/jackb/Desktop/Sparta Global/IDEA Projects/08_API_Group_Project/PetStoreApiTesting"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.StoreTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StoreGetTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StorePostTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StorePostTests.getOrderByIdReturnsTheCorrectOrder.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StorePostTests.patchCommentWithNewContent_ReturnsNewContentInResponseBody.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StorePostTests.testingThePetGetsDeleted.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StoreTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StoreTests.getInventoryReturnsCorrectAvailableAmount.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StoreTests.getOrderByIdReturnsTheCorrectCompleteStatus.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StoreTests.getOrderByIdReturnsTheCorrectOrder.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StoreTests.getOrderByIdReturnsTheCorrectQuantity.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StoreTests.getOrderByIdReturnsTheCorrectShipStatus.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StoreTests.getOrderByIncorrectIDReturns404.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.PetStoreApiTesting [org.eclipse.jetty:jetty-maven-plugin:11.0.20:run].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.PetStoreApiTesting [org.eclipse.jetty:jetty-maven-plugin:11.0.20:start].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.PetStoreApiTesting [package].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/JHerb/Desktop/Sparta Academy/SpartaJavaWork/Week8&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager" selected="JUnit.StoreGetTests (1)">
+    <configuration name="StoreGetTests (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PetStoreApiTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.tech243.store.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.tech243.store" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.tech243.store.StoreGetTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StorePostTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PetStoreApiTesting" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StorePostTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StorePostTests.getOrderByIdReturnsTheCorrectOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PetStoreApiTesting" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StorePostTests" />
+      <option name="METHOD_NAME" value="getOrderByIdReturnsTheCorrectOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StorePostTests.patchCommentWithNewContent_ReturnsNewContentInResponseBody" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PetStoreApiTesting" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StorePostTests" />
+      <option name="METHOD_NAME" value="patchCommentWithNewContent_ReturnsNewContentInResponseBody" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StorePostTests.testingThePetGetsDeleted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PetStoreApiTesting" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StorePostTests" />
+      <option name="METHOD_NAME" value="testingThePetGetsDeleted" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.StoreGetTests (1)" />
+        <item itemvalue="JUnit.StorePostTests" />
+        <item itemvalue="JUnit.StorePostTests.testingThePetGetsDeleted" />
+        <item itemvalue="JUnit.StorePostTests.getOrderByIdReturnsTheCorrectOrder" />
+        <item itemvalue="JUnit.StorePostTests.patchCommentWithNewContent_ReturnsNewContentInResponseBody" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
         <option value="jdk-21.0.2-temurin-21.0.2-4caba194b151-7da56cdf" />
       </set>
     </attachedChunks>
-
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/jackb/SpartaGlobal/PetStoreApiTesting/src/test/java"
-  }
-}]]></component>
-
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/jackb/SpartaGlobal/PetStoreApiTesting/src/test/java"
-  }
-}]]></component>
-
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\jackb\SpartaGlobal\PetStoreApiTesting\src\test\java" />
-    </key>
-
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
