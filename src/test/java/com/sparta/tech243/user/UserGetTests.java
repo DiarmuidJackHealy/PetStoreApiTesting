@@ -23,6 +23,7 @@ public class UserGetTests {
     public static final String BASE_URI = ApiConfig.getBaseUri();
     public static final String BASE_PATH = ApiConfig.getUserBasePath();
     private String testUserName;
+    private String testUserPassword;
 
     @BeforeEach
     void setUp() {
@@ -52,19 +53,8 @@ public class UserGetTests {
                         .as(User.class);
 
         this.testUserName = testUser.getUsername();
+        this.testUserPassword = testUser.getPassword();
     }
-
-//    @AfterEach
-//    void tearDown() {
-//        given(getRequestSpec()
-//                .setBasePath(BASE_PATH + "/user/" + "{username}")
-//                .addPathParam("username", testUserName)
-//                .build())
-//        .when()
-//                .delete()
-//        .then()
-//                .spec(getResponseStatus(204));
-//    }
 
     @Test
     @DisplayName("Get specific user from their username")
@@ -97,15 +87,78 @@ public class UserGetTests {
                                 .addPathParam("username", "copernicus")
                                 .build()
                 )
-                        .when()
+                .when()
                         .get()
-                        .then()
+                .then()
                         .log().all()
                         .spec(getJsonResponseWithStatus(404))
                         .extract()
                         .response();
 
         MatcherAssert.assertThat(response.statusCode(), Matchers.is(404));
+    }
+
+    @Test
+    @DisplayName("Login as a specific user")
+    void getLoginUser() {
+        Response response =
+                given(
+                        getRequestSpec()
+                                .setBasePath(BASE_PATH + "/login?{username}&{password}")
+                                .addPathParams("username", testUserName, "password", testUserPassword)
+                                .build()
+                )
+                    .when()
+                        .get()
+                    .then()
+                        .log().all()
+                        .spec(getJsonResponseWithStatus(200))
+                        .extract()
+                        .response();
+
+        MatcherAssert.assertThat(response.statusCode(), Matchers.is(200));
+    }
+
+    @Test
+    @DisplayName("Login as a specific user with an incorrect username")
+    void getLoginUserIncorrectUserName() {
+        Response response =
+                given(
+                        getRequestSpec()
+                                .setBasePath(BASE_PATH + "/login?{username}&{password}")
+                                .addPathParams("username", "Bill", "password", testUserPassword)
+                                .build()
+                )
+                        .when()
+                        .get()
+                        .then()
+                        .log().all()
+                        .spec(getJsonResponseWithStatus(200))
+                        .extract()
+                        .response();
+
+        MatcherAssert.assertThat(response.statusCode(), Matchers.is(200));
+    }
+
+    @Test
+    @DisplayName("Login as a specific user with an incorrect password")
+    void getLoginUserIncorrectPassword() {
+        Response response =
+                given(
+                        getRequestSpec()
+                                .setBasePath(BASE_PATH + "/login?{username}&{password}")
+                                .addPathParams("username", testUserName, "password", "Boop")
+                                .build()
+                )
+                        .when()
+                        .get()
+                        .then()
+                        .log().all()
+                        .spec(getJsonResponseWithStatus(200))
+                        .extract()
+                        .response();
+
+        MatcherAssert.assertThat(response.statusCode(), Matchers.is(200));
     }
 
 
