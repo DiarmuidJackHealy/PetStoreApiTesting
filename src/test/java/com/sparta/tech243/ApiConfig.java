@@ -4,6 +4,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+
 public class ApiConfig {
     private static final Properties properties = new Properties();
 
@@ -30,6 +34,4 @@ public class ApiConfig {
     public static String getBasePathStore() { return properties.getProperty("store_base_path");}
     public static String getBasePathUser() {return properties.getProperty("user_base_path");}
     public static String getBasePet() {return properties.getProperty("pet_base_path");}
-
-
 }

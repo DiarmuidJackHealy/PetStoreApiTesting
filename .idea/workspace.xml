@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e6bf3b0-ad87-4399-8474-f02b9a3ee60d" name="Changes" comment="">
+
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/ApiConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/ApiConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/pets/PetsGetTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/pets/PetsGetTests.java" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/pets/PetsDeleteTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/pets/PetsDeleteTests.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +43,19 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.StoreTests.executor": "Run",
+    "JUnit.PetTests.executor": "Run",
+    "JUnit.PetsGetTests.executor": "Run",
+    "JUnit.PetsGetTests.getA400ForInvalidTag.executor": "Run",
+    "JUnit.PetsGetTests.getAllPendingPets_CountsThem.executor": "Run",
+    "JUnit.PetsGetTests.getAllPetsByATag.executor": "Run",
+    "JUnit.PetsGetTests.getAllPetsByATag3.executor": "Run",
+    "JUnit.PetsGetTests.getAllPets_CountsThem.executor": "Run",
+    "JUnit.PetsGetTests.getAllSoldPets_CountsThem.executor": "Run",
+    "JUnit.PetsGetTests.getPetByIdReturnsTheCorrectAmountOfTags.executor": "Run",
+    "JUnit.PetsGetTests.getPetByIdReturnsTheCorrectOrder.executor": "Run",
+    "JUnit.PetsGetTests.getPetByIdReturnsTheCorrectPhotoURL.executor": "Run",
+    "JUnit.PetsGetTests.getPetByIdReturnsTheCorrectStatus.executor": "Run",
+    "JUnit.PetsGetTests.getPetByIncorrectIDReturns404.executor": "Run",
     "JUnit.StoreGetTests.executor": "Run",
     "JUnit.StorePostTests.executor": "Run",
     "JUnit.StorePostTests.getOrderByIdReturnsTheCorrectOrder.executor": "Run",
@@ -55,14 +74,19 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "1-5-PetGetTests",
     "git-widget-placeholder": "2-Store",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/JHerb/Desktop/Sparta Academy/SpartaJavaWork/Week8",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.PetsGetTests.getA400ForInvalidTag">
+    <configuration name="PetsGetTests.getA400ForInvalidTag" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+
   <component name="RunManager" selected="JUnit.PetsDeleteTests">
     <configuration name="PetsDeleteTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+
       <module name="PetStoreApiTesting" />
       <extension name="coverage">
         <pattern>
@@ -71,12 +95,32 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.sparta.tech243.pets" />
+
+      <option name="MAIN_CLASS_NAME" value="com.sparta.tech243.pets.PetsGetTests" />
+      <option name="METHOD_NAME" value="getA400ForInvalidTag" />
+      <option name="TEST_OBJECT" value="method" />
+
       <option name="MAIN_CLASS_NAME" value="com.sparta.tech243.pets.PetsDeleteTests" />
       <option name="TEST_OBJECT" value="class" />
+
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+
+    <configuration name="PetsGetTests.getAllPendingPets_CountsThem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PetStoreApiTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.tech243.pets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.tech243.pets" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.tech243.pets.PetsGetTests" />
+      <option name="METHOD_NAME" value="getAllPendingPets_CountsThem" />
+      <option name="TEST_OBJECT" value="method" />
+
     <configuration name="StoreGetTests (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PetStoreApiTesting" />
       <extension name="coverage">
@@ -88,10 +132,25 @@
       <option name="PACKAGE_NAME" value="com.sparta.tech243.store" />
       <option name="MAIN_CLASS_NAME" value="com.sparta.tech243.store.StoreGetTests" />
       <option name="TEST_OBJECT" value="class" />
+
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+
+    <configuration name="PetsGetTests.getAllPetsByATag" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PetStoreApiTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.tech243.pets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.tech243.pets" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.tech243.pets.PetsGetTests" />
+      <option name="METHOD_NAME" value="getAllPetsByATag" />
+      <option name="TEST_OBJECT" value="method" />
+
     <configuration name="StorePostTests (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PetStoreApiTesting" />
       <extension name="coverage">
@@ -103,24 +162,54 @@
       <option name="PACKAGE_NAME" value="com.sparta.tech243.store" />
       <option name="MAIN_CLASS_NAME" value="com.sparta.tech243.store.StorePostTests" />
       <option name="TEST_OBJECT" value="class" />
+
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+
+    <configuration name="PetsGetTests.getAllPetsByATag3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PetStoreApiTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.tech243.pets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.tech243.pets" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.tech243.pets.PetsGetTests" />
+      <option name="METHOD_NAME" value="getAllPetsByATag3" />
+      <option name="TEST_OBJECT" value="method" />
+
     <configuration name="StorePostTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PetStoreApiTesting" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="StorePostTests" />
       <option name="TEST_OBJECT" value="class" />
+
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+
+    <configuration name="PetsGetTests.getAllSoldPets_CountsThem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PetStoreApiTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.tech243.pets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.tech243.pets" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.tech243.pets.PetsGetTests" />
+      <option name="METHOD_NAME" value="getAllSoldPets_CountsThem" />
+
     <configuration name="StorePostTests.testingThePetGetsDeleted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PetStoreApiTesting" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="StorePostTests" />
       <option name="METHOD_NAME" value="testingThePetGetsDeleted" />
+
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -128,11 +217,19 @@
     </configuration>
     <recent_temporary>
       <list>
+
+        <item itemvalue="JUnit.PetsGetTests.getA400ForInvalidTag" />
+        <item itemvalue="JUnit.PetsGetTests.getAllPetsByATag3" />
+        <item itemvalue="JUnit.PetsGetTests.getAllPetsByATag" />
+        <item itemvalue="JUnit.PetsGetTests.getAllSoldPets_CountsThem" />
+        <item itemvalue="JUnit.PetsGetTests.getAllPendingPets_CountsThem" />
+
         <item itemvalue="JUnit.PetsDeleteTests" />
         <item itemvalue="JUnit.StorePostTests (1)" />
         <item itemvalue="JUnit.StoreGetTests (1)" />
         <item itemvalue="JUnit.StorePostTests" />
         <item itemvalue="JUnit.StorePostTests.testingThePetGetsDeleted" />
+
       </list>
     </recent_temporary>
   </component>
