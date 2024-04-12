@@ -13,6 +13,7 @@ public class PetsGetTests {
     @DisplayName("GET /pet/findByStatus")
     void getPetByStatus() {
 
+
     }
 
     @Test
