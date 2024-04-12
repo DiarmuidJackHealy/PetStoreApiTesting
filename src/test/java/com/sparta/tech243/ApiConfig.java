@@ -10,44 +10,26 @@ public class ApiConfig {
 
     static {
 
-        try (InputStream inputStream = ApiConfig.class                .getClassLoader()
-
+        try (InputStream inputStream = ApiConfig.class
+                .getClassLoader()
                 .getResourceAsStream("testconfig.properties")) {
-
             if (inputStream != null) {
-
                 properties.load(inputStream);
-
             } else {
-
-                throw new IOException("Unable to find testconfig.properties");
-
-            }        } catch (IOException e) {
-
+                throw new IOException("Unable to find config.properties");
+            }
+        } catch (IOException e) {
             e.printStackTrace();
-
-        }    }
+        }
+    }
 
     public static String getBaseUri() {
-
         return properties.getProperty("api_url");
-
     }
-
-    public static String getToken() {
-
-        return properties.getProperty("api_token");
-
-    }
+    public static String getToken() {return properties.getProperty("api_token");}
+    public static String getBasePathStore() { return properties.getProperty("store_base_path");}
+    public static String getBasePathUser() {return properties.getProperty("user_base_path");}
+    public static String getBasePet() {return properties.getProperty("pet_base_path");}
 
 
-    public static String getCommonBasePath() {
-
-        return properties.getProperty("common_base_path");
-
-    }
-
-    public static String getGithubPersonalToken() {
-        return properties.getProperty("gitHub_personal_access_token");
-    }
 }
