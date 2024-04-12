@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e6bf3b0-ad87-4399-8474-f02b9a3ee60d" name="Changes" comment="">
-
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/pets/petsdelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/pets/petsdelete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/pets/petsget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/pets/petsget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/pets/petspost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/pets/petspost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/pets/petsput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/pets/petsput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/store/storedelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/store/storedelete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/store/storeget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/store/storeget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/store/storepost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/store/storepost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/user/userdelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/user/userdelete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/user/userget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/user/userget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/user/userpost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/user/userpost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/user/userput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/user/userput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/ApiConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/ApiConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/pets/PetsGetTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/tech243/pets/PetsGetTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +28,8 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
-}</component>
+    &quot;associatedIndex&quot;: 8
+    }</component>
   <component name="ProjectId" id="2exGsfWXynCI1MZazBYrsrTvMDD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -50,36 +38,141 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.StoreTests.executor": "Run",
+    "JUnit.PetTests.executor": "Run",
+    "JUnit.PetsGetTests.executor": "Run",
+    "JUnit.PetsGetTests.getA400ForInvalidTag.executor": "Run",
+    "JUnit.PetsGetTests.getAllPendingPets_CountsThem.executor": "Run",
+    "JUnit.PetsGetTests.getAllPetsByATag.executor": "Run",
+    "JUnit.PetsGetTests.getAllPetsByATag3.executor": "Run",
+    "JUnit.PetsGetTests.getAllPets_CountsThem.executor": "Run",
+    "JUnit.PetsGetTests.getAllSoldPets_CountsThem.executor": "Run",
+    "JUnit.PetsGetTests.getPetByIdReturnsTheCorrectAmountOfTags.executor": "Run",
+    "JUnit.PetsGetTests.getPetByIdReturnsTheCorrectOrder.executor": "Run",
+    "JUnit.PetsGetTests.getPetByIdReturnsTheCorrectPhotoURL.executor": "Run",
+    "JUnit.PetsGetTests.getPetByIdReturnsTheCorrectStatus.executor": "Run",
+    "JUnit.PetsGetTests.getPetByIncorrectIDReturns404.executor": "Run",
+    "JUnit.StoreGetTests.executor": "Run",
+    "JUnit.StorePostTests.executor": "Run",
+    "JUnit.StorePostTests.getOrderByIdReturnsTheCorrectOrder.executor": "Run",
+    "JUnit.StorePostTests.patchCommentWithNewContent_ReturnsNewContentInResponseBody.executor": "Run",
+    "JUnit.StorePostTests.testingThePetGetsDeleted.executor": "Run",
+    "JUnit.StoreTests.executor": "Run",
+    "JUnit.StoreTests.getInventoryReturnsCorrectAvailableAmount.executor": "Run",
+    "JUnit.StoreTests.getOrderByIdReturnsTheCorrectCompleteStatus.executor": "Run",
+    "JUnit.StoreTests.getOrderByIdReturnsTheCorrectOrder.executor": "Run",
+    "JUnit.StoreTests.getOrderByIdReturnsTheCorrectQuantity.executor": "Run",
+    "JUnit.StoreTests.getOrderByIdReturnsTheCorrectShipStatus.executor": "Run",
+    "JUnit.StoreTests.getOrderByIncorrectIDReturns404.executor": "Run",
+    "Maven.PetStoreApiTesting [org.eclipse.jetty:jetty-maven-plugin:11.0.20:run].executor": "Run",
+    "Maven.PetStoreApiTesting [org.eclipse.jetty:jetty-maven-plugin:11.0.20:start].executor": "Run",
+    "Maven.PetStoreApiTesting [package].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-
-    "git-widget-placeholder": "dev",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "1-5-PetGetTests",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/jackb/Desktop/Sparta Global/IDEA Projects/08_API_Group_Project/PetStoreApiTesting"
+    "last_opened_file_path": "C:/Users/JHerb/Desktop/Sparta Academy/SpartaJavaWork/Week8",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.PetsGetTests.getA400ForInvalidTag">
+    <configuration name="PetsGetTests.getA400ForInvalidTag" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PetStoreApiTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.tech243.pets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.tech243.pets" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.tech243.pets.PetsGetTests" />
+      <option name="METHOD_NAME" value="getA400ForInvalidTag" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PetsGetTests.getAllPendingPets_CountsThem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PetStoreApiTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.tech243.pets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.tech243.pets" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.tech243.pets.PetsGetTests" />
+      <option name="METHOD_NAME" value="getAllPendingPets_CountsThem" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PetsGetTests.getAllPetsByATag" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PetStoreApiTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.tech243.pets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.tech243.pets" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.tech243.pets.PetsGetTests" />
+      <option name="METHOD_NAME" value="getAllPetsByATag" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PetsGetTests.getAllPetsByATag3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PetStoreApiTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.tech243.pets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.tech243.pets" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.tech243.pets.PetsGetTests" />
+      <option name="METHOD_NAME" value="getAllPetsByATag3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PetsGetTests.getAllSoldPets_CountsThem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PetStoreApiTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.tech243.pets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.tech243.pets" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.tech243.pets.PetsGetTests" />
+      <option name="METHOD_NAME" value="getAllSoldPets_CountsThem" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PetsGetTests.getA400ForInvalidTag" />
+        <item itemvalue="JUnit.PetsGetTests.getAllPetsByATag3" />
+        <item itemvalue="JUnit.PetsGetTests.getAllPetsByATag" />
+        <item itemvalue="JUnit.PetsGetTests.getAllSoldPets_CountsThem" />
+        <item itemvalue="JUnit.PetsGetTests.getAllPendingPets_CountsThem" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
         <option value="jdk-21.0.2-temurin-21.0.2-4caba194b151-7da56cdf" />
       </set>
     </attachedChunks>
-
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/jackb/SpartaGlobal/PetStoreApiTesting/src/test/java"
-  }
-}]]></component>
-
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/jackb/SpartaGlobal/PetStoreApiTesting/src/test/java"
-  }
-}]]></component>
-
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\jackb\SpartaGlobal\PetStoreApiTesting\src\test\java" />
-    </key>
-
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
