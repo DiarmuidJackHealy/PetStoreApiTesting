@@ -10,8 +10,8 @@ public class ApiConfig {
 
     static {
 
-        try (InputStream inputStream = ApiConfig.class                .getClassLoader()
-
+        try (InputStream inputStream = ApiConfig.class
+                .getClassLoader()
                 .getResourceAsStream("testconfig.properties")) {
 
             if (inputStream != null) {
@@ -41,9 +41,9 @@ public class ApiConfig {
     }
 
 
-    public static String getCommonBasePath() {
+    public static String getUserBasePath() {
 
-        return properties.getProperty("common_base_path");
+        return properties.getProperty("user_base_path");
 
     }
 
