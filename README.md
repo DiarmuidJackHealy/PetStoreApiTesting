@@ -27,9 +27,11 @@ This project aims to create a reliable testing framework for the Swagger Pet Sto
 # How would you Collaborate with this Project
 
 
-# Class Diagram
+# Class 📊Diagram
+This project tests three main entities: pets, stores, and users. <br>
+The following diagram displays the HTTP requests that were tested.
 
-![image](https://github.com/DiarmuidJackHealy/PetStoreApiTesting/assets/147779056/e4745b89-fa6f-4cc6-abe2-5891ea777170)
+![image (1)](https://github.com/DiarmuidJackHealy/PetStoreApiTesting/assets/147779056/959555a5-2e2d-485b-bfb0-d35fa5d5f117)
 
 
 # License

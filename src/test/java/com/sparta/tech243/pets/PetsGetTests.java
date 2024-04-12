@@ -1,6 +1,7 @@
 package com.sparta.tech243.pets;
 
 import com.sparta.tech243.ApiConfig;
+
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
